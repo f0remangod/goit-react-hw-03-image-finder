@@ -6,7 +6,7 @@ import { Button } from '../Button/Button';
 import { Modal } from '../Modal/Modal';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import PacmanLoader from 'react-spinners/ClipLoader';
+import PacmanLoader from 'react-spinners/PacmanLoader';
 
 export class App extends Component {
   state = {
@@ -103,16 +103,12 @@ export class App extends Component {
 
         {isLoading && (
           <PacmanLoader
-            color="#36d7b7"
+            color="#3f51b5"
+            size="30"
             cssOverride={{
               display: 'block',
-              margin: '0 auto',
+              margin: '0 auto ',
               borderColor: '#3f51b5',
-              width: '100px',
-              height: '100px',
-              position: 'absolute',
-              top: '50%',
-              left: 'calc(50% - 50px)',
             }}
           />
         )}

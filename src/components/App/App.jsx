@@ -104,7 +104,7 @@ export class App extends Component {
         {isLoading && (
           <PacmanLoader
             color="#3f51b5"
-            size="30"
+            size="30px"
             cssOverride={{
               display: 'block',
               margin: '0 auto ',

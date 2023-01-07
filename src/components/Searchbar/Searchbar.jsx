@@ -7,10 +7,15 @@ import {
   SearchFormButtonLabel,
   SearchFormInput,
 } from './Searchbar.styled';
+import PropTypes from 'prop-types';
 
 export class Searchbar extends Component {
   state = {
     inputValue: '',
+  };
+
+  static propTypes = {
+    onSubmit: PropTypes.func.isRequired,
   };
 
   handleInputChange = event => {

@@ -66,7 +66,9 @@ export class App extends Component {
   };
 
   handleFormSubmit = searchQuery => {
-    this.setState({ searchQuery, page: 1, loadedImages: [] });
+    if (this.state.searchQuery !== searchQuery) {
+      this.setState({ searchQuery, page: 1, loadedImages: [] });
+    }
   };
 
   handleImageClick = image => {
